@@ -1,75 +1,83 @@
-/* Home page styles */
-@font-face {
-    font-family: 'cakefont';
-    src: url('../font/cakedingbats-webfont.eot');
-    src: url('../font/cakedingbats-webfont.eot?#iefix') format('embedded-opentype'),
-    url('../font/cakedingbats-webfont.woff2') format('woff2'),
-    url('../font/cakedingbats-webfont.woff') format('woff'),
-    url('../font/cakedingbats-webfont.ttf') format('truetype'),
-    url('../font/cakedingbats-webfont.svg#cake_dingbatsregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
+/* ===== GENERAL ===== */
 body {
-    padding: 60px 0;
-}
-header {
-    margin-bottom: 60px;
-}
-img {
-    margin-bottom: 30px;
-}
-h1 {
-    font-weight: bold;
-}
-ul {
-    list-style-type: none;
-    margin: 0 0 30px 0;
-    padding-left: 25px;
-}
-a {
-    color: #ff0000;
-    text-decoration: underline;
-}
-hr {
-    border-bottom: 1px solid #e7e7e7;
-    border-top: 0;
-    margin-bottom: 35px;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-.text-center {
+/* ===== HEADER ===== */
+header {
+    background: #c6c6c6;
+    padding: 20px;
     text-align: center;
 }
-.links a {
-    margin-right: 10px;
+
+header h1 {
+    margin: 0;
 }
-.release-name {
-    color: #D33C43;
-    font-weight: 400;
-    font-style: italic;
+
+/* ===== NAVBAR ===== */
+nav {
+    background: #ddd;
 }
-.bullet:before {
-    font-family: 'cakefont', sans-serif;
-    font-size: 18px;
-    display: inline-block;
-    margin-left: -1.3em;
-    width: 1.2em;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    vertical-align: -1px;
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
 }
-.success:before {
-    color: #88c671;
-    content: "\0056";
+
+nav li {
+    padding: 15px 25px;
+    border-right: 1px solid #ccc;
+    cursor: pointer;
+    transition: background 0.2s ease;
 }
-.problem:before {
-    color: #d33d44;
-    content: "\0057";
+
+/* al pasar el mouse */
+nav li:hover {
+    background: #b5e8b5;     /* verde claro estilo hover */
 }
-.cake-error {
-    padding: 10px;
-    margin: 10px 0;
+
+/* ===== SLIDESHOW ===== */
+.slideshow {
+    background: #6e6e6e;
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+    position: relative;
 }
-#url-rewriting-warning {
-    display: none;
+
+.slideshow .arrow-left,
+.slideshow .arrow-right {
+    position: absolute;
+    top: 50%;
+    font-size: 32px;
+    cursor: pointer;
+}
+
+.slideshow .arrow-left {
+    left: 30px;
+}
+
+.slideshow .arrow-right {
+    right: 30px;
+}
+
+.random-text {
+    background: #ffffff;
+    padding: 40px;
+    text-align: center;
+    color: #000000;
+}
+
+footer {
+    background: #000000;
+    color: white;
+    padding: 40px;
+    text-align: center;
+}
+
+.footer a{
+    color: aqua;
 }
