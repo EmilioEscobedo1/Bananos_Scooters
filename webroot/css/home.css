@@ -1,13 +1,11 @@
-/* ===== GENERAL ===== */
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-/* ===== HEADER ===== */
 header {
-    background: #c6c6c6;
-    padding: 20px;
+    background: #ffffff;
+    padding: 10px;
     text-align: center;
 }
 
@@ -15,9 +13,8 @@ header h1 {
     margin: 0;
 }
 
-/* ===== NAVBAR ===== */
 nav {
-    background: #ddd;
+    background: aqua;
 }
 
 nav ul {
@@ -31,15 +28,12 @@ nav li {
     padding: 15px 25px;
     border-right: 1px solid #ccc;
     cursor: pointer;
-    transition: background 0.2s ease;
 }
 
-/* al pasar el mouse */
 nav li:hover {
-    background: #b5e8b5;     /* verde claro estilo hover */
+    background: #b5e8b5;
 }
 
-/* ===== SLIDESHOW ===== */
 .slideshow {
     background: #6e6e6e;
     color: white;
@@ -64,7 +58,7 @@ nav li:hover {
     right: 30px;
 }
 
-.random-text {
+section {
     background: #ffffff;
     padding: 40px;
     text-align: center;
@@ -74,10 +68,10 @@ nav li:hover {
 footer {
     background: #000000;
     color: white;
-    padding: 40px;
+    padding: 10px;
     text-align: center;
 }
 
-.footer a{
+a{
     color: aqua;
 }

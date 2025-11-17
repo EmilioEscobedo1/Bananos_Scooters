@@ -1,21 +1,20 @@
 <!DOCTYPE html>
 <html lang="es">
-<link rel="stylesheet" href="home.css">
 
 <head>
+    <?= $this->Html->css('home') ?>
     <meta charset="UTF-8">
     <title>OnlyScooters</title>
 </head>
+
 <body>
 
-    <!-- HEADER -->
-    <header style="background:#c6c6c6; padding:20px; text-align:center;">
+    <header>
         <img src="C:\bananosScooters\Bananos_Scooters\webroot\img\logoOnlyScooters.png" alt="logo goes here"><h1>OnlyScooters</h1>
     </header>
 
-    <!-- NAVBAR -->
     <nav>
-        <ul style="list-style:none; display:flex; margin:0; padding:0; background:#ddd;">
+        <ul>
             <li style="padding:15px;">Promotions</li>
             <li style="padding:15px;">Map</li>
             <li style="padding:15px;">Login/Register</li>
@@ -26,11 +25,37 @@
         </ul>
     </nav>
 
-    <!-- SLIDESHOW -->
-    <section style="background:#555; color:white; padding:100px 0; text-align:center; position:relative;">
-        <span style="position:absolute; left:30px; top:50%; font-size:30px;">&lt;</span>
-        <span style="font-size:24px;">slideshow(models)</span>
-        <span style="position:absolute; right:30px; top:50%; font-size:30px;">&gt;</span>
+    <section>
+<div class="slideshow-container">
+
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
+    <img src="C:\bananosScooters\Bananos_Scooters\webroot\img\b_electric 500w.jpg">
+    <div class="text">Caption Text</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 3</div>
+    <img src="C:\bananosScooters\Bananos_Scooters\webroot\img\hiboyS2pro.jpg">
+    <div class="text">Caption Two</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <img src="webroot\img\joyorT7.jpg">
+    <div class="text">Caption Three</div>
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
     </section>
 
     <section>
