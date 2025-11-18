@@ -7,6 +7,9 @@ header {
     background: #ffffff;
     padding: 10px;
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 header h1 {
@@ -74,4 +77,8 @@ footer {
 
 a{
     color: aqua;
+}
+#logo_scooters {
+    width: 100px;
+    height: auto;
 }

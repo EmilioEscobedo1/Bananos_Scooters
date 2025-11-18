@@ -10,7 +10,7 @@
 <body>
 
     <header>
-        <img src="C:\bananosScooters\Bananos_Scooters\webroot\img\logoOnlyScooters.png" alt="logo goes here"><h1>OnlyScooters</h1>
+        <img src="./img/logoOnlyScooters.png" alt="logo goes here" id="logo_scooters"><h1>OnlyScooters</h1>
     </header>
 
     <nav>
@@ -36,13 +36,13 @@
 
   <div class="mySlides fade">
     <div class="numbertext">2 / 3</div>
-    <img src="C:\bananosScooters\Bananos_Scooters\webroot\img\hiboyS2pro.jpg">
+    <img src="./webroot/img/joyorT7.jpg">
     <div class="text">Caption Two</div>
   </div>
 
   <div class="mySlides fade">
     <div class="numbertext">3 / 3</div>
-    <img src="webroot\img\joyorT7.jpg">
+    <img src="./webroot/img/joyorT7.jpg">
     <div class="text">Caption Three</div>
   </div>
 
