@@ -5,13 +5,11 @@
 </header>
 <nav>
     <ul>
-        <li style="padding:15px;">Promotions</li>
-        <li style="padding:15px;">Map</li>
-        <li style="padding:15px;">Login/Register</li>
-        <li style="padding:15px;">Rent(trips)</li>
-        <li style="padding:15px;">Models</li>
-        <li style="padding:15px;">Stations</li>
-        <li style="padding:15px;">Account</li>
+        <li><a href="/modelos">MODELOS</a></li>
+        <li><a href="/mapa">MAPA</a></li>
+        <li><a href="/promociones">PROMOCIONES</a></li>
+        <li><a href="/rentas">RENTAS</a></li>
+        <li><a href="/estaciones">ESTACIONES</a></li>
     </ul>
 </nav>
 <body>

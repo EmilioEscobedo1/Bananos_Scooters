@@ -17,54 +17,35 @@ header {
 header h1 {
     margin: 0;
 }
-nav {
-    background: aqua;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 nav ul {
-    list-style: none;
-    margin: 0;
+    list-style-type: none;
     padding: 0;
+    margin: 20px 0;
     display: flex;
+    gap: 25px;
+    justify-content: center;
 }
 
-nav li {
-    padding: 15px 25px;
-    border-right: 1px solid #ccc;
-    cursor: pointer;
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 15px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    display: inline-block;
+    transition: all 0.3s ease;
 }
 
-nav li:hover {
-    background: #b5e8b5;
-}
-
-.slideshow {
-    background: #6e6e6e;
+nav ul li a:hover {
+    background-color: #00aff0;
     color: white;
-    padding: 100px 0;
-    text-align: center;
-    position: relative;
+    border-color: #00aff0;
+    transform: scale(1.15);
+    box-shadow: 0 0 15px rgba(0, 175, 240, 0.6);
 }
-
-.slideshow .arrow-left,
-.slideshow .arrow-right {
-    position: absolute;
-    top: 50%;
-    font-size: 32px;
-    cursor: pointer;
-}
-
-.slideshow .arrow-left {
-    left: 30px;
-}
-
-.slideshow .arrow-right {
-    right: 30px;
-}
-
 section {
     background: #ffffff;
     padding: 40px;
