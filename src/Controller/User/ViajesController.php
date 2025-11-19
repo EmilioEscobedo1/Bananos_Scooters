@@ -1,14 +1,16 @@
 <?php
 declare(strict_types=1);
 
-namespace App\Controller;
+namespace App\Controller\User;
+
+use App\Controller\AppController;
 
 /**
  * Viajes Controller
  *
  * @property \App\Model\Table\ViajesTable $Viajes
  */
-class DashboardController extends AppController
+class ViajesController extends AppController
 {
     /**
      * Index method

@@ -1,19 +1,34 @@
 <?php
 declare(strict_types=1);
 
-namespace App\Controller;
+namespace App\Controller\User;
 
+use App\Controller\AppController;
 
+/**
+ * Users Controller
+ *
+ * @property \App\Model\Table\UsersTable $Users
+ */
 class UsersController extends AppController
 {
-
+    /**
+     * Initialize controller
+     *
+     * @return void
+     */
     public function initialize(): void
     {
         parent::initialize();
 
-        $this->Authentication->allowUnauthenticated(['login', 'add']);
+        $this->Authentication->allowUnauthenticated(['login']);
     }
 
+    /**
+     * Index method
+     *
+     * @return \Cake\Http\Response|null|void Renders view
+     */
     public function index()
     {
         $query = $this->Users->find();
@@ -22,6 +37,13 @@ class UsersController extends AppController
         $this->set(compact('users'));
     }
 
+    /**
+     * View method
+     *
+     * @param string|null $id User id.
+     * @return \Cake\Http\Response|null|void Renders view
+     * @throws \Cake\Datasource\Exception\RecordNotFoundException When record not found.
+     */
     public function view($id = null)
     {
         $user = $this->Users->get($id, contain: ['MetodoDePagos', 'Transacciones', 'Viajes']);
@@ -99,28 +121,17 @@ class UsersController extends AppController
     {
         $this->request->allowMethod(['get', 'post']);
         $result = $this->Authentication->getResult();
-
         if ($result->isValid()) {
             $this->Flash->success(__('Login successful'));
-
-        //saber si el usuario es admin o no
-        $identidad = $this->request->getAttribute('identity');    
-        if ($identidad-> get('admin') == 1){
-            $redirect = $this->redirect("/admin/dashboard");
-        }else{
-            $redirect = $this->redirect("/user/profile");
-        }
-
+            $redirect = $this->Authentication->getLoginRedirect();
+            if ($redirect) {
+                return $this->redirect($redirect);
+            }
         }
 
         // Display error if user submitted and authentication failed
         if ($this->request->is('post')) {
             $this->Flash->error(__('Invalid username or password'));
         }
-    }
-    public function logout()
-    {
-        $this->Authentication->logout();
-        return $this->redirect(['controller' => 'Users', 'action' => 'login']);
     }
 }

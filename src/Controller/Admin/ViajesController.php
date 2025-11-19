@@ -1,7 +1,9 @@
 <?php
 declare(strict_types=1);
 
-namespace App\Controller;
+namespace App\Controller\Admin;
+
+use App\Controller\AppController;
 
 /**
  * Viajes Controller
@@ -15,6 +17,11 @@ class DashboardController extends AppController
      *
      * @return \Cake\Http\Response|null|void Renders view
      */
+    public function initialize(): void
+    {
+        parent::initialize();
+        $this->viewBuilder()->setLayout('admin');
+    }
     public function index()
     {
         $query = $this->Viajes->find()

@@ -1,7 +1,17 @@
 <!DOCTYPE html>
 <html>
+<head>
+    <?= $this->Html->css('cake') ?>
+    <?= $this->Html->css('home') ?>
+    <?= $this->Html->css('fonts.css') ?>
+    <?= $this->Html->css('milligram.min.css') ?>
+    <?= $this->Html->css('normalize.min.css') ?>
+    
+    <meta charset="UTF-8">
+    <title>OnlyScooters</title>
+</head>
 <header>
-<img src="./img/logoOnlyScooters.png" alt="logo goes here" id="logo_scooters"><h1>OnlyScooters</h1>
+<img src="/img/logoOnlyScooters.png" alt="logo goes here" id="logo_scooters"><h1>OnlyScooters</h1>
 </header>
 <nav>
     <ul>
