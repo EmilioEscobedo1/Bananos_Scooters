@@ -11,6 +11,7 @@
     <?= $this->fetch('meta') ?>
     <?= $this->fetch('css') ?>
     <?= $this->fetch('script') ?>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <header>
 <img src="/img/logoOnlyScooters.png" alt="logo goes here" id="logo_scooters"><h1>OnlyScooters</h1>
@@ -41,7 +42,7 @@
                     <li><a href="contactanos">Contactanos</a></li>
                     <li><a href="equipo">Nuestro Equipo</a></li>
                 </ul>
-            </div> 
+        </div> 
     </footer>
 </body>
 </html>
