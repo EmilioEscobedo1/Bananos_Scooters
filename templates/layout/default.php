@@ -2,6 +2,7 @@
 <html>
 <head>
     <?= $this->Html->css('home') ?>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <header>
 <img src="./img/logoOnlyScooters.png" alt="logo goes here" id="logo_scooters"><h1>OnlyScooters</h1>
@@ -25,9 +26,7 @@
             <div class="socialIcons">
                 <a href="facebook"><i class="fa-brands fa-facebook"></i></a>
                 <a href="instagram"><i class="fa-brands fa-instagram"></i></a>
-                <a href="twitter"><i class="fa-brands fa-twitter"></i></a>
                 <a href="whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
-                <a href="email"><i class="fa-brands fa-mail"></i></a>
             </div>
             <div class="footerNav">
                     <li><a href="sobre">Sobre</a></li>
@@ -35,10 +34,6 @@
                     <li><a href="equipo">Nuestro Equipo</a></li>
                 </ul>
             </div> 
-            
-        <div class="footerBottom">
-            <p>Copyright &copy;2025; Designed by <span class="designer">Pelillos</span></p>
-        </div>
     </footer>
 </body>
 </html>
