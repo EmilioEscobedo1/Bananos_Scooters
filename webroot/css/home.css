@@ -39,15 +39,31 @@ nav ul li a {
     transition: all 0.3s ease;
 }
 
-nav ul li a:hover {
-    background-color: #00aff0;
+.slideshow {
+    background: #6e6e6e;
     color: white;
-    border-color: #00aff0;
-    transform: scale(1.15);
-    box-shadow: 0 0 15px rgba(0, 175, 240, 0.6);
+    padding: 100px 0;
+    text-align: center;
+    position: relative;
+}
+
+.slideshow .arrow-left,
+.slideshow .arrow-right {
+    position: absolute;
+    top: 50%;
+    font-size: 32px;
+    cursor: pointer;
+}
+
+.slideshow .arrow-left {
+    left: 30px;
+}
+
+.slideshow .arrow-right {
+    right: 30px;
 }
 section {
-    background: #ffffff;
+    background: #e9e8e8;
     padding: 40px;
     text-align: center;
     color: #000000;
@@ -62,8 +78,13 @@ footer {
 
 a{
     color: aqua;
+    text-decoration: underline;
 }
 #logo_scooters {
     width: 100px;
     height: auto;
+}
+
+a:hover{
+    color: red;
 }
