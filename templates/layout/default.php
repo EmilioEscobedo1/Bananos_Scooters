@@ -1,5 +1,17 @@
 <!DOCTYPE html>
 <html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+        <?= $this->fetch('title') ?>
+    </title>
+    <?= $this->Html->css(['home']) ?>
+    <?= $this->Html->meta('icon') ?>
+    <?= $this->fetch('meta') ?>
+    <?= $this->fetch('css') ?>
+    <?= $this->fetch('script') ?>
+</head>
 <header>
 <img src="/img/logoOnlyScooters.png" alt="logo goes here" id="logo_scooters"><h1>OnlyScooters</h1>
 </header>
