@@ -25,7 +25,7 @@
 
   <div class="mySlides fade">
     <div class="numbertext">3 / 3</div>
-    <img src="./img/joyorT7.jpg">
+    <img src="./img/turboantM10.jpg">
     <div class="text">Caption Three</div>
   </div>
 

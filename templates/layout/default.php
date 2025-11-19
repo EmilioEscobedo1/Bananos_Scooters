@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html>
+<head>
+    <?= $this->Html->css('home') ?>
+</head>
 <header>
 <img src="./img/logoOnlyScooters.png" alt="logo goes here" id="logo_scooters"><h1>OnlyScooters</h1>
 </header>
@@ -21,11 +24,11 @@
     </main>
     <footer>
         <ul>
-            <li><a>Facebook</a></li>
-            <li><a>Twitter</a></li>
-            <li><a>Instagram</a></li>
-            <li><a>Whatsapp</a></li>
-            <li><a>Email</a></li>
+            <li><a>Facebook: @Only_Scooters</a></li>
+            <li><a>Twitter: @Only_Scooters</a></li>
+            <li><a>Instagram: @OnlyScooters</a></li>
+            <li><a>Whatsapp: 462-207-1968</a></li>
+            <li><a>Email: OnlyScooters@business.com</a></li>
         </ul>        
     </footer>
 </body>
