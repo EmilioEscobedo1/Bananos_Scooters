@@ -1,12 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<head>
-    <?= $this->Html->css('home') ?>
-    <meta charset="UTF-8">
-    <title>OnlyScooters</title>
-</head>
-
+  
 <body>
 
     <section>
