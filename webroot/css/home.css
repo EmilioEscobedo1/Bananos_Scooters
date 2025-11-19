@@ -39,6 +39,14 @@ nav ul li a {
     transition: all 0.3s ease;
 }
 
+nav ul li a:hover {
+    background-color: #00aff0;
+    color: white;
+    border-color: #00aff0;
+    transform: scale(1.15);
+    box-shadow: 0 0 15px rgba(0, 175, 240, 0.6);
+}
+
 .slideshow {
     background: #6e6e6e;
     color: white;
