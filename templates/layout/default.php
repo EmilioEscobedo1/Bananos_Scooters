@@ -21,13 +21,24 @@
         <?= $this->fetch('content') ?>
     </main>
     <footer>
-        <ul>
-            <li><a href="">Facebook: @Only_Scooters</a></li>
-            <li><a href="">Twitter: @Only_Scooters</a></li>
-            <li><a href="">Instagram: @OnlyScooters</a></li>
-            <li><a href="">Whatsapp: 462-207-1968</a></li>
-            <li><a href="">Email: OnlyScooters@business.com</a></li>
-        </ul>        
+        <div class="footerContainer">
+            <div class="socialIcons">
+                <a href="facebook"><i class="fa-brands fa-facebook"></i></a>
+                <a href="instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="twitter"><i class="fa-brands fa-twitter"></i></a>
+                <a href="whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="email"><i class="fa-brands fa-mail"></i></a>
+            </div>
+            <div class="footerNav">
+                    <li><a href="sobre">Sobre</a></li>
+                    <li><a href="contactanos">Contactanos</a></li>
+                    <li><a href="equipo">Nuestro Equipo</a></li>
+                </ul>
+            </div> 
+            
+        <div class="footerBottom">
+            <p>Copyright &copy;2025; Designed by <span class="designer">Pelillos</span></p>
+        </div>
     </footer>
 </body>
 </html>
