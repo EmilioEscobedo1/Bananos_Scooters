@@ -17,30 +17,35 @@ header {
 header h1 {
     margin: 0;
 }
-nav {
-    background: aqua;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 nav ul {
-    list-style: none;
-    margin: 0;
+    list-style-type: none;
     padding: 0;
+    margin: 20px 0;
     display: flex;
+    gap: 25px;
+    justify-content: center;
 }
 
-nav li {
-    padding: 15px 25px;
-    border-right: 1px solid #ccc;
-    cursor: pointer;
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 15px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    display: inline-block;
+    transition: all 0.3s ease;
 }
 
-nav li:hover {
-    background: #b5e8b5;
+nav ul li a:hover {
+    background-color: #00aff0;
+    color: white;
+    border-color: #00aff0;
+    transform: scale(1.15);
+    box-shadow: 0 0 15px rgba(0, 175, 240, 0.6);
 }
-
 .slideshow {
     background: #6e6e6e;
     color: white;
@@ -64,9 +69,8 @@ nav li:hover {
 .slideshow .arrow-right {
     right: 30px;
 }
-
 section {
-    background: #ffffff;
+    background: #e9e8e8;
     padding: 40px;
     text-align: center;
     color: #000000;
@@ -81,8 +85,13 @@ footer {
 
 a{
     color: aqua;
+    text-decoration: underline;
 }
 #logo_scooters {
     width: 100px;
     height: auto;
+}
+
+a:hover{
+    color: red;
 }

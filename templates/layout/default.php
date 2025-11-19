@@ -1,27 +1,15 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <?= $this->Html->css('cake') ?>
-    <?= $this->Html->css('home') ?>
-    <?= $this->Html->css('fonts.css') ?>
-    <?= $this->Html->css('milligram.min.css') ?>
-    <?= $this->Html->css('normalize.min.css') ?>
-    
-    <meta charset="UTF-8">
-    <title>OnlyScooters</title>
-</head>
 <header>
 <img src="/img/logoOnlyScooters.png" alt="logo goes here" id="logo_scooters"><h1>OnlyScooters</h1>
 </header>
 <nav>
     <ul>
-        <li style="padding:15px;">Promotions</li>
-        <li style="padding:15px;">Map</li>
-        <li style="padding:15px;">Login/Register</li>
-        <li style="padding:15px;">Rent(trips)</li>
-        <li style="padding:15px;">Models</li>
-        <li style="padding:15px;">Stations</li>
-        <li style="padding:15px;">Account</li>
+        <li><a href="/modelos">MODELOS</a></li>
+        <li><a href="/mapa">MAPA</a></li>
+        <li><a href="/promociones">PROMOCIONES</a></li>
+        <li><a href="/rentas">RENTAS</a></li>
+        <li><a href="/estaciones">ESTACIONES</a></li>
     </ul>
 </nav>
 <body>
@@ -30,13 +18,24 @@
         <?= $this->fetch('content') ?>
     </main>
     <footer>
-        <ul>
-            <li><a>Facebook</a></li>
-            <li><a>Twitter</a></li>
-            <li><a>Instagram</a></li>
-            <li><a>Whatsapp</a></li>
-            <li><a>Email</a></li>
-        </ul>        
+        <div class="footerContainer">
+            <div class="socialIcons">
+                <a href="facebook"><i class="fa-brands fa-facebook"></i></a>
+                <a href="instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="twitter"><i class="fa-brands fa-twitter"></i></a>
+                <a href="whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="email"><i class="fa-brands fa-mail"></i></a>
+            </div>
+            <div class="footerNav">
+                    <li><a href="sobre">Sobre</a></li>
+                    <li><a href="contactanos">Contactanos</a></li>
+                    <li><a href="equipo">Nuestro Equipo</a></li>
+                </ul>
+            </div> 
+            
+        <div class="footerBottom">
+            <p>Copyright &copy;2025; Designed by <span class="designer">Pelillos</span></p>
+        </div>
     </footer>
 </body>
 </html>
