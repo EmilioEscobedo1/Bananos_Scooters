@@ -24,11 +24,11 @@
     </main>
     <footer>
         <ul>
-            <li><a>Facebook: @Only_Scooters</a></li>
-            <li><a>Twitter: @Only_Scooters</a></li>
-            <li><a>Instagram: @OnlyScooters</a></li>
-            <li><a>Whatsapp: 462-207-1968</a></li>
-            <li><a>Email: OnlyScooters@business.com</a></li>
+            <li><a href="">Facebook: @Only_Scooters</a></li>
+            <li><a href="">Twitter: @Only_Scooters</a></li>
+            <li><a href="">Instagram: @OnlyScooters</a></li>
+            <li><a href="">Whatsapp: 462-207-1968</a></li>
+            <li><a href="">Email: OnlyScooters@business.com</a></li>
         </ul>        
     </footer>
 </body>
