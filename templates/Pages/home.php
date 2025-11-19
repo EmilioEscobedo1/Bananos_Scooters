@@ -15,21 +15,33 @@
 
   <!-- Full-width images with number and caption text -->
   <div class="mySlides fade">
-    <div class="numbertext">1 / 3</div>
+    <div class="numbertext">1 / 5</div>
     <img src="./img/joyorT7.jpg" style="width: 225px">
     <div class="text">joyorT7</div>
   </div>
 
   <div class="mySlides fade">
-    <div class="numbertext">2 / 3</div>
+    <div class="numbertext">2 / 5</div>
     <img src="./img/turboantM10.jpg" style="width: 225px">
     <div class="text">turboantM10</div>
   </div>
 
   <div class="mySlides fade">
-    <div class="numbertext">3 / 3</div>
+    <div class="numbertext">3 / 5</div>
     <img src="./img/xiaomi lite 4.jpg" style="width: 225px">
     <div class="text">Xiaomi lite 4</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">4 / 5</div>
+    <img src="./img/xp4_stepthrough.jpg" style="width: 225px">
+    <div class="text">xp4_stepthrough</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">5 / 5</div>
+    <img src="./img/smartkickN1_1200W.jpg" style="width: 225px">
+    <div class="text">smartkickN1</div>
   </div>
 
   <!-- Next and previous buttons -->
