@@ -9,8 +9,9 @@
     <?= $this->Html->css(['home']) ?>
     <?= $this->Html->css(['cake']) ?>
     <?= $this->Html->css(['fonts']) ?>
-    <?= $this->Html->css(['milligram.min.css']) ?>
-    <?= $this->Html->css(['normalize.min.css']) ?>
+    <?= $this->fetch('meta') ?>
+    <?= $this->fetch('css') ?>
+    <?= $this->fetch('script') ?>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <header>

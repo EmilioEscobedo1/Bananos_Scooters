@@ -109,13 +109,13 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .socialIcons a i {
     color: #111;
     font-size: 35px;
-    transition: 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .socialIcons a:hover {
