@@ -7,10 +7,10 @@
         <?= $this->fetch('title') ?>
     </title>
     <?= $this->Html->css(['home']) ?>
-    <?= $this->Html->meta('icon') ?>
-    <?= $this->fetch('meta') ?>
-    <?= $this->fetch('css') ?>
-    <?= $this->fetch('script') ?>
+    <?= $this->Html->css(['cake']) ?>
+    <?= $this->Html->css(['fonts']) ?>
+    <?= $this->Html->css(['milligram.min.css']) ?>
+    <?= $this->Html->css(['normalize.min.css']) ?>
 </head>
 <header>
 <img src="/img/logoOnlyScooters.png" alt="logo goes here" id="logo_scooters"><h1>OnlyScooters</h1>
