@@ -19,11 +19,12 @@ header h1 {
 }
 
 nav ul {
+    background: #00aff0;
     list-style-type: none;
-    padding: 0;
-    margin: 20px 0;
+    padding: 12px;
+    margin: 0px 0px;
     display: flex;
-    gap: 25px;
+    gap: 15px;
     justify-content: center;
 }
 
@@ -40,11 +41,12 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: #00aff0;
-    color: white;
-    border-color: #00aff0;
-    transform: scale(1.15);
-    box-shadow: 0 0 15px rgba(0, 175, 240, 0.6);
+    background-color: #fff;
+    margin: 0px 15px;
+    color: #00aff0;
+    border-color: #fff;
+    transform: scale(1.20);
+    box-shadow: 0 0 15px white;
 }
 .slideshow {
     background: #6e6e6e;
@@ -80,56 +82,73 @@ section {
     height: auto;
 }
 
-footer{
+footer {
     background-color: #00aff0;
+    padding: 20px 0;
+    text-align: center;
 }
-.footerContainer{
+
+.footerContainer {
     width: 100%;
-    padding: 20px 0 10px;
+    margin: 0 auto;
 }
-.socialIcons{
+.socialIcons {
     display: flex;
     justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
 }
-.socialIcons a{
+
+.socialIcons a {
     text-decoration: none;
-    padding:  15px;
     background-color: white;
-    margin: 10px;
+    padding: 10px;
     border-radius: 50%;
-}
-.socialIcons a i{
-    font-size: 2em;
-    color: black;
-}
-.socialIcons a:hover{
-    background-color: #000000;
-    transition: 0.5s;
-}
-.socialIcons a:hover i{
-    color: white;
-    transition: 0.5s;
-}
-.footerNav{
-    margin: 15px 0;
+    width: 40px;
+    height: 40px;
     display: flex;
     justify-content: center;
+    align-items: center;
+    transition: 0.3s ease;
 }
 
-.footerNav ul{
-    display: flex;
-    justify-content: center;
+.socialIcons a i {
+    color: #111;
+    font-size: 35px;
+    transition: 0.3s ease;
+}
+
+.socialIcons a:hover {
+    background-color: #fff;
+    border-color: #fff;
+    box-shadow: 0 0 15px white;
+    transform: translateY(-5px);
+}
+
+.socialIcons a:hover i {
+    color: #00aff0;
+}
+
+.footerLine ul {
     list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 35px;
 }
-.footerNav ul li a{
-    color:white;
-    margin: 20px;
-    text-decoration: none;
-    font-size: 1.3em;
-    opacity: 0.7;
-    transition: 0.5s;
 
+.footerLine ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1em;
+    font-weight: bold;     
+    transition: all 0.3s ease;
 }
-.footerNav ul li a:hover{
-    opacity: 1;
+
+.footerLine ul li a:hover {
+    color: #333;
+    text-shadow: 0 0 15px #333;
+    margin: 0px 15px;
+    transform: scale(1.20);
 }

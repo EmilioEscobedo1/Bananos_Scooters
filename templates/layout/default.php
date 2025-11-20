@@ -37,11 +37,11 @@
                 <a href="instagram"><i class="fa-brands fa-instagram"></i></a>
                 <a href="whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
             </div>
-            <div class="footerNav">
-                    <li><a href="sobre">Sobre</a></li>
-                    <li><a href="contactanos">Contactanos</a></li>
-                    <li><a href="equipo">Nuestro Equipo</a></li>
-                </ul>
+            <div class="footerLine">
+            <ul>  <li><a href="sobre">NOSOTROS</a></li>
+                    <li><a href="contactanos">CONTACTANOS</a></li>
+                    <li><a href="equipo">NUESTRO EQUIPO</a></li>
+            </ul> </div>   
         </div> 
     </footer>
 </body>
