@@ -7,8 +7,6 @@
         <?= $this->fetch('title') ?>
     </title>
     <?= $this->Html->css(['home']) ?>
-    <?= $this->Html->css(['cake']) ?>
-    <?= $this->Html->css(['fonts']) ?>
     <?= $this->fetch('meta') ?>
     <?= $this->fetch('css') ?>
     <?= $this->fetch('script') ?>
