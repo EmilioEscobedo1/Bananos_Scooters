@@ -14,6 +14,12 @@
 </head>
 <header>
 <img src="/img/logoOnlyScooters.png" alt="logo goes here" id="logo_scooters"><h1>OnlyScooters</h1>
+
+<div class="auth-buttons">
+    <a href="/sesion" class="btn btn-sesion">Iniciar Sesión</a>
+    <a href="/registrarse" class="btn btn-registrarse">Registrarse</a>
+</div>
+
 </header>
 <nav>
     <ul>
