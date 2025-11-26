@@ -55,7 +55,9 @@ nav ul li a:hover {
     text-align: center;
     position: relative;
 }
-
+.slideshow-container a{
+    cursor: pointer;
+}
 .slideshow .arrow-left,
 .slideshow .arrow-right {
     position: absolute;

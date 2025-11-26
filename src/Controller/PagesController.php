@@ -13,7 +13,12 @@ use Cake\View\Exception\MissingTemplateException;
 
 class PagesController extends AppController
 {
+    public function initialize(): void
+    {
+        parent::initialize();
 
+        $this->Authentication->allowUnauthenticated(['display']);
+    }
     public function display(string ...$path): ?Response
     {
         if (!$path) {
