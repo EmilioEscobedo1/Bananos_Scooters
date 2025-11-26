@@ -26,7 +26,7 @@
         <li><a href="/modelos">MODELOS</a></li>
         <li><a href="/mapa">MAPA</a></li>
         <li><a href="/promociones">PROMOCIONES</a></li>
-        <li><a href="/rentas">RENTAS</a></li>
+        <li><a href="/rentas">RENTA</a></li>
         <li><a href="/estaciones">ESTACIONES</a></li>
     </ul>
 </nav>
