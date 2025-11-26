@@ -1,79 +1,53 @@
 <!DOCTYPE html>
-<html lang="es">
-
+<html>
 <head>
-    <?= $this->Html->css('home') ?>
-    <meta charset="UTF-8">
-    <title>OnlyScooters</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+        <?= $this->fetch('title') ?>
+    </title>
+    <?= $this->Html->css(['home']) ?>
+    <?= $this->fetch('meta') ?>
+    <?= $this->fetch('css') ?>
+    <?= $this->fetch('script') ?>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
+<header>
+<img src="/img/logoOnlyScooters.png" alt="logo goes here" id="logo_scooters"><h1>OnlyScooters</h1>
 
+<div class="auth-buttons">
+    <a href="/sesion" class="btn btn-sesion">Iniciar Sesión</a>
+    <a href="/registrarse" class="btn btn-registrarse">Registrarse</a>
+</div>
+
+</header>
+<nav>
+    <ul>
+        <li><a href="/modelos">MODELOS</a></li>
+        <li><a href="/mapa">MAPA</a></li>
+        <li><a href="/promociones">PROMOCIONES</a></li>
+        <li><a href="/rentas">RENTAS</a></li>
+        <li><a href="/estaciones">ESTACIONES</a></li>
+    </ul>
+</nav>
 <body>
-
-    <header>
-          <?= $this->Html->image('logoOnlyScooters.png', [
-    'alt' => 'logo goes here',
-    'id' => 'image-section'
-  ]) ?><h1>OnlyScooters</h1>
-    </header>
-
-    <nav>
-        <ul>
-            <li style="padding:15px;">Promotions</li>
-            <li style="padding:15px;">Map</li>
-            <li style="padding:15px;">Login/Register</li>
-            <li style="padding:15px;">Rent(trips)</li>
-            <li style="padding:15px;">Models</li>
-            <li style="padding:15px;">Stations</li>
-            <li style="padding:15px;">Account</li>
-        </ul>
-    </nav>
-
-    <section>
-<div class="slideshow-container">
-
-  <div class="mySlides fade">
-    <div class="numbertext">1 / 3</div>
-    <img src="C:\bananosScooters\Bananos_Scooters\webroot\img\b_electric 500w.jpg">
-    <div class="text">Caption Text</div>
-  </div>
-
-  <div class="mySlides fade">
-    <div class="numbertext">2 / 3</div>
-    <img src="C:\bananosScooters\Bananos_Scooters\webroot\img\hiboyS2pro.jpg">
-    <div class="text">Caption Two</div>
-  </div>
-
-  <div class="mySlides fade">
-    <div class="numbertext">3 / 3</div>
-    <img src="webroot\img\joyorT7.jpg">
-    <div class="text">Caption Three</div>
-  </div>
-
-  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-  <a class="next" onclick="plusSlides(1)">&#10095;</a>
-</div>
-<br>
-
-<div style="text-align:center">
-  <span class="dot" onclick="currentSlide(1)"></span>
-  <span class="dot" onclick="currentSlide(2)"></span>
-  <span class="dot" onclick="currentSlide(3)"></span>
-</div>
-    </section>
-
-    <section>
-        <p>Get to and from with a scooter thats only for you</p>
-    </section>
-
+    <main class="main">
+        <?= $this->Flash->render() ?>
+        <?= $this->fetch('content') ?>
+    </main>
     <footer>
-        <ul>
-            <li><a>Facebook</a></li>
-            <li><a>Twitter</a></li>
-            <li><a>Instagram</a></li>
-            <li><a>Whatsapp</a></li>
-            <li><a>Email</a></li>
-        </ul>
+        <div class="footerContainer">
+            <div class="socialIcons">
+                <a href="facebook"><i class="fa-brands fa-facebook"></i></a>
+                <a href="instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+            <div class="footerLine">
+            <ul>  <li><a href="sobre">NOSOTROS</a></li>
+                    <li><a href="contactanos">CONTACTANOS</a></li>
+                    <li><a href="equipo">NUESTRO EQUIPO</a></li>
+            </ul> </div>   
+        </div> 
     </footer>
-
 </body>
 </html>
