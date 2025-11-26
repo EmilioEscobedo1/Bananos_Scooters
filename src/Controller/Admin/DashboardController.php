@@ -3,7 +3,8 @@ declare(strict_types=1);
 
 namespace App\Controller\Admin;
 
-use App\Controller\AppController;
+use Cake\Event\EventInterface;
+use App\Controller\Admin\AppController;
 
 class DashboardController extends AppController
 {
