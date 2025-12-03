@@ -55,6 +55,6 @@
     }).addTo(map);
 </script>
 <footer>
-    <p>Copyright &copy;2025; Designed by <span class="designer">Pelillos</span></p>
+    <p>Copyright &copy;2025; Designed by <span class="designer">Emilio Escobedo, Emiliano Hernandez, Erick Del Campo</span></p>
 </footer>
 </html>

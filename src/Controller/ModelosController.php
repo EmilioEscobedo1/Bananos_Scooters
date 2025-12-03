@@ -3,18 +3,9 @@ declare(strict_types=1);
 
 namespace App\Controller;
 
-/**
- * Modelos Controller
- *
- * @property \App\Model\Table\ModelosTable $Modelos
- */
 class ModelosController extends AppController
 {
-    /**
-     * Index method
-     *
-     * @return \Cake\Http\Response|null|void Renders view
-     */
+
     public function index()
     {
         $query = $this->Modelos->find();
@@ -23,24 +14,13 @@ class ModelosController extends AppController
         $this->set(compact('modelos'));
     }
 
-    /**
-     * View method
-     *
-     * @param string|null $id Modelo id.
-     * @return \Cake\Http\Response|null|void Renders view
-     * @throws \Cake\Datasource\Exception\RecordNotFoundException When record not found.
-     */
+
     public function view($id = null)
     {
         $modelo = $this->Modelos->get($id, contain: ['Vehiculos']);
         $this->set(compact('modelo'));
     }
 
-    /**
-     * Add method
-     *
-     * @return \Cake\Http\Response|null|void Redirects on successful add, renders view otherwise.
-     */
     public function add()
     {
         $modelo = $this->Modelos->newEmptyEntity();
@@ -56,13 +36,6 @@ class ModelosController extends AppController
         $this->set(compact('modelo'));
     }
 
-    /**
-     * Edit method
-     *
-     * @param string|null $id Modelo id.
-     * @return \Cake\Http\Response|null|void Redirects on successful edit, renders view otherwise.
-     * @throws \Cake\Datasource\Exception\RecordNotFoundException When record not found.
-     */
     public function edit($id = null)
     {
         $modelo = $this->Modelos->get($id, contain: []);
@@ -78,13 +51,6 @@ class ModelosController extends AppController
         $this->set(compact('modelo'));
     }
 
-    /**
-     * Delete method
-     *
-     * @param string|null $id Modelo id.
-     * @return \Cake\Http\Response|null Redirects to index.
-     * @throws \Cake\Datasource\Exception\RecordNotFoundException When record not found.
-     */
     public function delete($id = null)
     {
         $this->request->allowMethod(['post', 'delete']);
