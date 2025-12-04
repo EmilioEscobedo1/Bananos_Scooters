@@ -4,7 +4,7 @@ declare(strict_types=1);
 namespace App\Controller\Admin;
 
 use Cake\Event\EventInterface;
-use App\Controller\Admin\AppController;
+use App\Controller\User\AppController;
 
 class DashboardController extends AppController
 {

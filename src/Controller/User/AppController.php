@@ -29,5 +29,7 @@ class AppController extends Controller
         $this->loadComponent('Flash');
         
         $this->loadComponent('Authentication.Authentication');
+
+        $this->viewBuilder()->setLayout('user');
     }
 }
