@@ -135,4 +135,9 @@ class UsersController extends AppController
             $this->Flash->error(__('Invalid username or password'));
         }
     }
+    public function logout()
+    {
+        $this->Authentication->logout();
+        return $this->redirect(['controller' => 'Users', 'action' => 'login']);
+    }
 }

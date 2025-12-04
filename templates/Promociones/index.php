@@ -3,59 +3,34 @@
  * @var \App\View\AppView $this
  * @var iterable<\App\Model\Entity\Promocione> $promociones
  */
+$this->Html->css('modelos.css', ['block' => true]);
 ?>
-<div class="promociones index content">
-    <?= $this->Html->link(__('New Promocione'), ['action' => 'add'], ['class' => 'button float-right']) ?>
-    <h3><?= __('Promociones') ?></h3>
-    <div class="table-responsive">
-        <table>
-            <thead>
-                <tr>
-                    <th><?= $this->Paginator->sort('id') ?></th>
-                    <th><?= $this->Paginator->sort('codigo') ?></th>
-                    <th><?= $this->Paginator->sort('descuento') ?></th>
-                    <th><?= $this->Paginator->sort('fecha_expiracion') ?></th>
-                    <th><?= $this->Paginator->sort('estado') ?></th>
-                    <th><?= $this->Paginator->sort('created') ?></th>
-                    <th><?= $this->Paginator->sort('modified') ?></th>
-                    <th class="actions"><?= __('Actions') ?></th>
-                </tr>
-            </thead>
-            <tbody>
-                <?php foreach ($promociones as $promocione): ?>
-                <tr>
-                    <td><?= $this->Number->format($promocione->id) ?></td>
-                    <td><?= h($promocione->codigo) ?></td>
-                    <td><?= $this->Number->format($promocione->descuento) ?></td>
-                    <td><?= h($promocione->fecha_expiracion) ?></td>
-                    <td><?= h($promocione->estado) ?></td>
-                    <td><?= h($promocione->created) ?></td>
-                    <td><?= h($promocione->modified) ?></td>
-                    <td class="actions">
-                        <?= $this->Html->link(__('View'), ['action' => 'view', $promocione->id]) ?>
-                        <?= $this->Html->link(__('Edit'), ['action' => 'edit', $promocione->id]) ?>
-                        <?= $this->Form->postLink(
-                            __('Delete'),
-                            ['action' => 'delete', $promocione->id],
-                            [
-                                'method' => 'delete',
-                                'confirm' => __('Are you sure you want to delete # {0}?', $promocione->id),
-                            ]
-                        ) ?>
-                    </td>
-                </tr>
-                <?php endforeach; ?>
-            </tbody>
-        </table>
+    <div class="modelos-grid">
+        <?php foreach ($promociones as $promocione): ?>
+        <div class="modelo-card">
+            <div class="card-header">
+                <h4><?= h($promocione->codigo) ?></h4>
+                <span class="card-id">#<?= $this->Number->format($promocione->id) ?></span>
+            </div>
+            
+            <div class="card-body">
+                <div class="card-info">
+                    <div class="info-item">
+                        <span class="info-label"><?= __('Descuento') ?>:</span>
+                        <span class="info-value tarifa"><?= $this->Number->format($promocione->descuento) ?></span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card-footer">
+                <div class="card-actions">
+                    <?= $this->Html->link(
+                        __('Ver'),
+                        ['action' => 'view', $modelo->id],
+                        ['class' => 'button button-small button-view']
+                    ) ?>
+                </div>
+            </div>
+        </div>
+        <?php endforeach; ?>
     </div>
-    <div class="paginator">
-        <ul class="pagination">
-            <?= $this->Paginator->first('<< ' . __('first')) ?>
-            <?= $this->Paginator->prev('< ' . __('previous')) ?>
-            <?= $this->Paginator->numbers() ?>
-            <?= $this->Paginator->next(__('next') . ' >') ?>
-            <?= $this->Paginator->last(__('last') . ' >>') ?>
-        </ul>
-        <p><?= $this->Paginator->counter(__('Page {{page}} of {{pages}}, showing {{current}} record(s) out of {{count}} total')) ?></p>
-    </div>
-</div>

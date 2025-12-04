@@ -9,8 +9,13 @@
     <?= $this->Html->css(['home']) ?>
     <?= $this->fetch('meta') ?>
     <?= $this->fetch('css') ?>
-    <?= $this->fetch('script') ?>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+     crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+     crossorigin=""></script>
 </head>
 <body>
     
@@ -21,7 +26,7 @@
         </div>
 
         <div class="auth-buttons">
-            <a href="/login">INICIAR SESIÓN</a>
+            <a href="/users/login">INICIAR SESIÓN</a>
             <a href="/users/add">REGISTRARSE</a>
         </div>
     </header>
@@ -31,7 +36,6 @@
             <li><a href="/modelos">MODELOS</a></li>
             <li><a href="/mapa">MAPA</a></li>
             <li><a href="/promociones">PROMOCIONES</a></li>
-            <li><a href="/rentas">RENTAS</a></li>
             <li><a href="/estaciones">ESTACIONES</a></li>
         </ul>
     </nav>
@@ -40,7 +44,15 @@
         <?= $this->Flash->render() ?>
         <?= $this->fetch('content') ?>
     </main>
-
+    <script>
+        var map = L.map('map').setView([20.671365757481606, -101.37469891349176], 16);
+        var marker = L.marker([20.671365757481606, -101.37469891349176]).addTo(map);
+        marker.bindPopup("<b>Estacion Intituto Irapuato</b><br>Av Mariano J. García 355, San Miguelito, 36557 Irapuato, Gto.");
+        L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 19,
+        attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+        }).addTo(map);
+    </script>
     <footer>
         <div class="footerContainer">
             <div class="socialIcons">

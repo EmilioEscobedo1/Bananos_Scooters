@@ -5,6 +5,12 @@ namespace App\Controller;
 
 class ModelosController extends AppController
 {
+    public function initialize(): void
+    {
+        parent::initialize();
+
+        $this->Authentication->allowUnauthenticated(['index', 'view']);
+    }
 
     public function index()
     {

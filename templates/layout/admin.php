@@ -36,7 +36,7 @@
     <img src="/img/icono_user.png" alt="Icono usuario logeado">
     <?php $identidad = $this->request->getAttribute('identity'); ?>
     <p>Hola!<br><?= h(ucfirst($identidad->get('username'))) ?></p>
-    <a href="/admin/logout">Logout</a>
+    <a href="/admin/users/logout">Logout</a>
 </div>
 </header>
 <body>
