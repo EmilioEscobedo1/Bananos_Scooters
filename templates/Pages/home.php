@@ -1,4 +1,8 @@
-<section>
+<section class="seccion_bienvenida">
+    <h2>Bienvenido a OnlyScooters</h2>
+    <p>Renta el scooter que siempre has querido</p>
+</section>
+<section class="seccion_slideshow">
 <div class="slideshow-container">
 
   <div class="mySlides fade">
@@ -32,7 +36,7 @@
     </section>
 
     <section>
-        <p>Get to and from with a scooter thats only for you</p>
+        <p>Obten un scooter solo para ti, renta con nosotros</p>
     </section>
 <script>
   let slideIndex = 1;
