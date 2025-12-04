@@ -41,7 +41,7 @@
             <li>
                 <?= $this->Html->link(
                     "<i class='bx bx-receipt'></i><span class='link_name'>Transacciones</span>",
-                    ['controller' => 'Transacciones', 'action' => 'index'],
+                    ['controller' => 'Estaciones', 'action' => 'index'],
                     ['escape' => false]
                 ) ?>
             </li>
