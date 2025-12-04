@@ -33,6 +33,7 @@
 
     <nav>
         <ul>
+            <li><a href="/">INICIO</a></li>
             <li><a href="/modelos">MODELOS</a></li>
             <li><a href="/mapa">MAPA</a></li>
             <li><a href="/promociones">PROMOCIONES</a></li>
