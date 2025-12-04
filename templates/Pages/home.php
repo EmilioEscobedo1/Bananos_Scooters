@@ -4,19 +4,19 @@
   <div class="mySlides fade">
     <div class="numbertext">1 / 3</div>
     <img src="\img\b_electric 500w.jpg">
-    <div class="text">Caption Text</div>
+    <div class="text">Modelo Electric 500w</div>
   </div>
 
   <div class="mySlides fade">
     <div class="numbertext">2 / 3</div>
     <img src="\img\hiboyS2pro.jpg">
-    <div class="text">Caption Two</div>
+    <div class="text">Modelo hiboyS2pro</div>
   </div>
 
   <div class="mySlides fade">
     <div class="numbertext">3 / 3</div>
     <img src="\img\joyorT7.jpg">
-    <div class="text">Caption Three</div>
+    <div class="text">Modelo JoyorT7</div>
   </div>
 
   <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
