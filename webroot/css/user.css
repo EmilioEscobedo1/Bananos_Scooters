@@ -302,3 +302,154 @@
     overflow-x: auto;
     background-color: #f5e6cd;
 }
+.viajes.index.content {
+    width: 90%;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.viajes.index.content h3 {
+    color: #333;
+    font-size: 1.8rem;
+    display: inline-block;
+    border-bottom: 3px solid #00aff0;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+
+.viajes.index.content .button.float-right {
+    float: right;
+    background-color: #00aff0;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    width: auto;
+    font-size: 1rem;
+}
+
+.viajes.index.content .button.float-right:hover {
+    background-color: #008cb9;
+    transform: translateY(-2px);
+}
+
+.viajes.index.content::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.table-responsive {
+    overflow-x: auto;
+    border-radius: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+table thead tr {
+    background-color: #00aff0;
+    color: #ffffff;
+    text-align: left;
+}
+
+table th {
+    padding: 15px;
+    white-space: nowrap;
+}
+
+table th a {
+    color: white;
+    text-decoration: none;
+}
+
+table tbody tr {
+    border-bottom: 1px solid #ddd;
+}
+
+table tbody tr:nth-of-type(even) {
+    background-color: #f9f9f9;
+}
+
+table tbody tr:hover {
+    background-color: #eaf8ff;
+}
+
+table td {
+    padding: 12px 15px;
+    color: #555;
+}
+
+table td a {
+    color: #00aff0;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.actions {
+    white-space: nowrap;
+    text-align: center;
+}
+
+.actions a {
+    display: inline-block;
+    padding: 6px 12px;
+    margin: 0 2px;
+    background-color: #f1f1f1;
+    color: #333;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 0.85rem;
+    transition: background 0.3s;
+}
+
+.actions a:hover {
+    background-color: #00aff0;
+    color: white;
+}
+
+.paginator {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.pagination {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+.pagination li a {
+    color: #333;
+    padding: 8px 14px;
+    text-decoration: none;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: white;
+}
+
+.pagination li.active a {
+    background-color: #00aff0;
+    color: white;
+    border-color: #00aff0;
+}
+
+.pagination li a:hover:not(.active) {
+    background-color: #eaf8ff;
+    color: #00aff0;
+}
+
+.paginator p {
+    color: #888;
+    font-size: 0.9rem;
+    margin-top: 10px;
+}
